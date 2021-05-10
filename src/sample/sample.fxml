@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <MenuBar fx:id="mainMenuBar">
+        <menus>
+          <Menu fx:id="menuitemConnection" mnemonicParsing="false" text="Соединение">
+            <items>
+              <MenuItem fx:id="menuItemConnect" mnemonicParsing="false" onAction="#menuItemConnect_OnAction" text="Подключиться" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="mainTextArea" editable="false" prefHeight="382.0" prefWidth="600.0" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="textFieldMessage" editable="false" onAction="#buttonSend_onClick" onMouseClicked="#textFieldMessage_OnMouseClicked" opacity="0.5" prefHeight="25.0" prefWidth="448.0" text="Введите сообщение...">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </TextField>
+            <Button fx:id="buttonSend" mnemonicParsing="false" onAction="#buttonSend_onClick" prefHeight="25.0" text="Отправить" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
