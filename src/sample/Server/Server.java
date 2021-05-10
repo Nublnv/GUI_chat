@@ -1,4 +1,4 @@
-package Server;
+package sample.Server;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

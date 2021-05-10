@@ -1,4 +1,4 @@
-package Server;
+package sample.Server;
 
 import java.awt.*;
 import java.net.Socket;
